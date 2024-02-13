@@ -94,6 +94,7 @@ const Admit = () => {
             <input
               type='Number'
               value={selectedRollNumber}
+              readOnly
               onChange={event => setSelectedRollNumber(event.target.value)}
             />
           ) : (
@@ -156,6 +157,7 @@ const Admit = () => {
               className='placeholder'
               type='text placeholder'
               value={name}
+              readOnly
               onChange={handleNameChange}
             />
           </div>{' '}
